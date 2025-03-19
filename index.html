@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Analytics</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-wrapper">
+        <!-- Image Section with Different Sources -->
+        <div class="image-section">
+          <picture>
+            <!-- Desktop Image -->
+            <source
+              media="(min-width: 769px)"
+              srcset="./images/image-header-desktop.jpg"
+            />
+            <!-- Mobile Image -->
+            <source
+              media="(max-width: 768px)"
+              srcset="./images/image-header-mobile.jpg"
+            />
+            <!-- Fallback Image -->
+            <img
+              class="desktop-img"
+              src="./images/image-header-desktop.jpg"
+              alt="Business analytics"
+            />
+            <img
+              class="mobile-img"
+              src="./images/image-header-mobile.jpg"
+              alt="Business analytics"
+            />
+          </picture>
+        </div>
+        <!-- COMMENT: use picture tag to swap between different pics size -->
+        <!-- NOTE: add empty div to make overlay -->
+        <!-- <div class="image-section">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/image-header-desktop.jpg"
+            />
+            <img src="./images/image-header-mobile.jpg" alt="mobile" />
+          </picture>
+        </div> -->
+
+        <!-- Content Section -->
+        <div class="content-section">
+          <h1 class="main-heading">
+            Get insights that help <span>your business grow.</span>
+          </h1>
+          <p class="description">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+
+          <!-- Stats Section -->
+          <div class="stats-container">
+            <div class="stat-item">
+              <div class="stat-number">10k+</div>
+              <div class="stat-label">companies</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">314</div>
+              <div class="stat-label">templates</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">12M+</div>
+              <div class="stat-label">queries</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
